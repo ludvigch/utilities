@@ -1,5 +1,5 @@
 #!/bin/sh
-: '
+: "
     This script builds and deploys gatsby project onto amazon s3.
     It will also make a backup of current production bucket into a backup bucket.
     
@@ -14,7 +14,7 @@
     WARNING: This script will delete everything in the ./public directory as well as old s3 objects not present in public folder
              after the build(read more about aws s3 sync's --delete option if unsure what this means).
              
-'
+"
         
 BACKUP_BUCKET="s3://"
 PRODUCTION_BUCKET="s3://"
